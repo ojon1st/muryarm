@@ -10,4 +10,8 @@
   <p>Welcome to Express</p>
 </body>
 
+<script>
+  fetch('http://localhost:3000/mobile/api/v1/cas/statistiques').then(res => res.json()).then(console.log).catch(console.log)
+</script>
+
 </html>
