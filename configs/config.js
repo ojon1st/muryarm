@@ -6,7 +6,12 @@ module.exports = {
 
     CAS_CONFIRMES: 22,
     CAS_GUERIS: 0,
-    CAS_DECEDES: 3
+    CAS_DECEDES: 3,
+
+    DEFAULT_EMAIL_SERVER_ADRESS: 'smtp.office365.com',
+    DEFAULT_EMAIL_SERVER_PORT: 587,
+    DEFAULT_EMAIL_USERNAME: 'contact@muryarmatassa.org',
+    DEFAULT_EMAIL_PASSWORD: 'Suk21538'
 
 
 };
