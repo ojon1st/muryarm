@@ -16,9 +16,9 @@ module.exports.populate = (router => {
 	router.post('/sendAlert', async function(req, res) {
 		try {
 			await Mail.send({
-				subject: 'Nouveau cas',
+				subject: 'COROVID-19 -- Nouveau cas',
 				to: `"MURYAR MATASSA" <${Config.DEFAULT_EMAIL_USERNAME}>`,
-				from: `"ALERTE CORONAVIRUS" <${Config.DEFAULT_EMAIL_USERNAME}>`,
+				from: `"LANCEUR D'ALERTE CORONAVIRUS" <${Config.DEFAULT_EMAIL_USERNAME}>`,
 				pretty: true,
 				html: `
 					<!DOCTYPE html lang="fr">
@@ -30,13 +30,13 @@ module.exports.populate = (router => {
 						<body>
 							<p>Bonjour,</p>
 							<p>
-								Nouvelle alerte reçue du cas de Covid-19:<br><br>
-								<h2 style="margin:0">Informations</h2 style="margin:0"><br><br>
-								<h3>Nom & prénom:</h3>&nbsp;${req.body.nomPrenom}<br>
-								<h3>Tranche d'âge:</h3>&nbsp;${req.body.age}<br>
-								<h3>Région:</h3>&nbsp;${req.body.region}<br>
-								<h3>Localité:</h3>&nbsp;${req.body.localite}<br>
-								<h3>Téléphone:</h3>&nbsp;${req.body.telephone}<br>
+								Nouvelle alerte reçue du cas de Covid-19:<br>
+								<h3 style="margin:0"><u>Informations</u></h3>
+								<u>Nom & prénom:</u>&nbsp;<b>${req.body.nomPrenom}</b><br>
+								<u>Tranche d'âge:</u>&nbsp;<b>${req.body.age}</b><br>
+								<u>Région:</u>&nbsp;<b>${req.body.region}</b><br>
+								<u>Localité:</u>&nbsp;<b>${req.body.localite}</b><br>
+								<u>Téléphone:</u>&nbsp;<b>${req.body.telephone}</b><br>
 							</p>
 							<p>Cordialement,</p>
 						</body>

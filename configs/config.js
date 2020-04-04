@@ -8,10 +8,10 @@ module.exports = {
     CAS_GUERIS: 0,
     CAS_DECEDES: 3,
 
-    DEFAULT_EMAIL_SERVER_ADRESS: 'smtp.office365.com',
-    DEFAULT_EMAIL_SERVER_PORT: 587,
-    DEFAULT_EMAIL_USERNAME: 'contact@muryarmatassa.org',
-    DEFAULT_EMAIL_PASSWORD: 'Suk21538'
+    DEFAULT_EMAIL_SERVER_ADRESS: 'smtp.gmail.com',
+    DEFAULT_EMAIL_SERVER_PORT: 465,
+    DEFAULT_EMAIL_USERNAME: 'muryarm@gmail.com',
+    DEFAULT_EMAIL_PASSWORD: 'h4y2020@Unicef'
 
 
 };

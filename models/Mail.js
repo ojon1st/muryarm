@@ -8,7 +8,7 @@ module.exports = {
     server: {
         host: Config.DEFAULT_EMAIL_SERVER_ADRESS,
         port: Config.DEFAULT_EMAIL_SERVER_PORT,
-        secure: (Config.DEFAULT_EMAIL_SERVER_PORT * 1 == 465),
+        secure: true,//(Config.DEFAULT_EMAIL_SERVER_PORT * 1 == 465),
         auth: {
             user: Config.DEFAULT_EMAIL_USERNAME,
             pass: Config.DEFAULT_EMAIL_PASSWORD
