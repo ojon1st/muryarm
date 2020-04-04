@@ -16,7 +16,7 @@ module.exports.populate = (router => {
 	router.post('/sendAlert', async function(req, res) {
 		try {
 			await Mail.send({
-				subject: 'COROVID-19 -- Nouveau cas',
+				subject: 'COVID-19 -- Nouveau cas',
 				to: `"MURYAR MATASSA" <${Config.DEFAULT_EMAIL_USERNAME}>`,
 				from: `"LANCEUR D'ALERTE CORONAVIRUS" <${Config.DEFAULT_EMAIL_USERNAME}>`,
 				pretty: true,
