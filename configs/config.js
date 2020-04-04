@@ -8,6 +8,16 @@ module.exports = {
     CAS_GUERIS: 0,
     CAS_DECEDES: 3,
 
+    DEFAULT: 'DEFAULT',
+    DELETED: 'DELETED',
+
+    getEtats() {
+        return [
+            this.DEFAULT,
+            this.DELETED
+        ]
+    },
+
     DEFAULT_EMAIL_SERVER_ADRESS: 'smtp.gmail.com',
     DEFAULT_EMAIL_SERVER_PORT: 465,
     DEFAULT_EMAIL_USERNAME: 'muryarm@gmail.com',

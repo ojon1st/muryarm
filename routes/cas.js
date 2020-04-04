@@ -2,7 +2,7 @@ var path = require('path');
 const Config = require(path.join(__dirname, '/../configs/config'))
 const Mail = require(path.join(__dirname, '/../models/Mail'))
 
-module.exports.populate = (router => {
+module.exports.populate = (router) => {
 	
 	/* Statistiques. */
 	router.get('/cas/statistiques', function (req, res, next) {
@@ -56,4 +56,4 @@ module.exports.populate = (router => {
 		}
 	})
 	
-});
+};
