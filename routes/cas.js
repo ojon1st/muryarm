@@ -45,7 +45,7 @@ module.exports.populate = (router) => {
 			});
 			return res.json({
 				success: true,
-				moreInfos: "Votre alerte est enregistrée avec succès. Les services compétents se chargent de la traiter et de vous répondre sans les délais les plus brefs.\nMerci de respecter les règles d'hygiène pour limiter la propagation du Virus."
+				moreInfos: "Votre alerte est enregistrée avec succès. Les services compétents se chargent de la traiter et de vous répondre dans les délais les plus brefs.\nMerci de respecter les règles d'hygiène pour limiter la propagation du Virus."
 			});
 		} catch(err) {
 			console.log(err, err.stack);
