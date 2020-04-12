@@ -23,5 +23,4 @@ module.exports = {
     DEFAULT_EMAIL_USERNAME: 'muryarm@gmail.com',
     DEFAULT_EMAIL_PASSWORD: 'h4y2020@Unicef'
 
-
 };

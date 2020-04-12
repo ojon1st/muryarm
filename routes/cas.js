@@ -17,7 +17,7 @@ module.exports.populate = (router) => {
 		try {
 			await Mail.send({
 				subject: 'COVID-19 -- Nouveau cas',
-				to: `"MURYAR MATASSA" <${Config.DEFAULT_EMAIL_USERNAME}>`,
+				to: `"MURYAR MATASSA" <contact@muryarmatassa.org>`,
 				from: `"LANCEUR D'ALERTE CORONAVIRUS" <${Config.DEFAULT_EMAIL_USERNAME}>`,
 				pretty: true,
 				html: `
