@@ -35,7 +35,9 @@ module.exports.populate = (router) => {
 								<u>Nom & prénom:</u>&nbsp;<b>${req.body.nomPrenom}</b><br>
 								<u>Tranche d'âge:</u>&nbsp;<b>${req.body.age}</b><br>
 								<u>Région:</u>&nbsp;<b>${req.body.region}</b><br>
-								<u>Localité:</u>&nbsp;<b>${req.body.localite}</b><br>
+								<u>Ville:</u>&nbsp;<b>${req.body.ville}</b><br>
+								<u>Commune:</u>&nbsp;<b>${req.body.commune}</b><br>
+								<u>Quartier:</u>&nbsp;<b>${req.body.quartier}</b><br>
 								<u>Téléphone:</u>&nbsp;<b>${req.body.telephone}</b><br>
 							</p>
 							<p>Cordialement,</p>
