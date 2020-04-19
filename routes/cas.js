@@ -32,6 +32,7 @@ module.exports.populate = (router) => {
 							<p>
 								Nouvelle alerte reçue du cas de Covid-19:<br>
 								<h3 style="margin:0"><u>Informations</u></h3>
+								<u>Personne concernée:</u>&nbsp;<b>${req.body.sujet}</b><br>
 								<u>Nom & prénom:</u>&nbsp;<b>${req.body.nomPrenom}</b><br>
 								<u>Tranche d'âge:</u>&nbsp;<b>${req.body.age}</b><br>
 								<u>Région:</u>&nbsp;<b>${req.body.region}</b><br>
@@ -39,6 +40,9 @@ module.exports.populate = (router) => {
 								<u>Commune:</u>&nbsp;<b>${req.body.commune}</b><br>
 								<u>Quartier:</u>&nbsp;<b>${req.body.quartier}</b><br>
 								<u>Téléphone:</u>&nbsp;<b>${req.body.telephone}</b><br>
+								<u>Fièvre:</u>&nbsp;<b>${req.body.fievre || 'Non'}</b><br>
+								<u>Toux sèche:</u>&nbsp;<b>${req.body.toux || 'Non'}</b><br>
+								<u>Difficultés respiratoires:</u>&nbsp;<b>${req.body.respiration || 'Non'}</b><br>
 							</p>
 							<p>Cordialement,</p>
 						</body>
