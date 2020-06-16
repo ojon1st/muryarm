@@ -25,9 +25,18 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+const path = require('path');
+const Statistique = require(path.join(__dirname, '../models/Statistique'));
+
+async function initAll() {
+  app.locals.statistiques = await Statistique.find();
+  server.listen(port);
+  server.on('error', onError);
+  server.on('listening', onListening);
+}
+
+initAll();
+
 
 /**
  * Normalize a port into a number, string, or false.

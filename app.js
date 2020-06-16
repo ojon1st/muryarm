@@ -9,9 +9,13 @@ var router = require('./routes/routes');
 
 var app = express();
 
+app.locals.projectsNames = [
+    '__MURYARMATASSA__'
+];
+
 const mongoose = require('mongoose');
 const options = {
-    replicaSet: true,
+    // replicaSet: true,
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
@@ -35,6 +39,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/mobile/api/v1', router);
+app.use('/api/v1/', router);
 
 module.exports = app;
